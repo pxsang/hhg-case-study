@@ -1,0 +1,61 @@
+.friendly-loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.loading-message {
+  margin-top: 5px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.loading {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.loading div {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  width: 8px;
+  background: #fff;
+  animation: loading 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.loading div:nth-child(1) {
+  left: 4px;
+  animation-delay: -0.24s;
+}
+
+.loading div:nth-child(2) {
+  left: 16px;
+  animation-delay: -0.12s;
+}
+
+.loading div:nth-child(3) {
+  left: 28px;
+  animation-delay: 0;
+}
+
+@keyframes loading {
+  0% {
+    top: 4px;
+    height: 32px;
+  }
+  50%, 100% {
+    top: 12px;
+    height: 16px;
+  }
+}

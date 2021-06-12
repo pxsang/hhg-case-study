@@ -1,0 +1,31 @@
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+
+.input-container label {
+  flex-basis: 100px;
+  line-height: 40px;
+}
+
+.input-container input {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.input-wrapper {
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.input-error-container {
+  flex-basis: 100%;
+  margin-top: 10px;
+}
+
+.input-error {
+  color: #ff4d4f;
+  font-size: 14px;
+}

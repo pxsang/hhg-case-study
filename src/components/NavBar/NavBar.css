@@ -1,0 +1,25 @@
+.header {
+  background-color: #001529;
+  padding: 15px 30px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.nav-item {
+  padding: 0 30px;
+}
+
+.nav-item.nav-item-active a {
+  color: #1890ff;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 18px;
+}
